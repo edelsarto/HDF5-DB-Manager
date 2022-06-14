@@ -1,0 +1,336 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>04e142db-8f59-4235-9772-5455c1ca2236</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>hdf5_database</Name>
+    <RootNamespace>hdf5_database</RootNamespace>
+    <TestFramework>Pytest</TestFramework>
+    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="main.py" />
+    <Compile Include="mainwindow.py" />
+    <Compile Include="modules\app_functions.py" />
+    <Compile Include="modules\app_settings.py" />
+    <Compile Include="modules\resources_rc.py" />
+    <Compile Include="modules\TechVidvan_FileManager.py" />
+    <Compile Include="modules\ui_functions.py" />
+    <Compile Include="modules\ui_main.py" />
+    <Compile Include="modules\__init__.py" />
+    <Compile Include="plugin\hdf5-is-for-lovers-master\exer\boatload.py" />
+    <Compile Include="plugin\hdf5-is-for-lovers-master\exer\crono.py" />
+    <Compile Include="plugin\hdf5-is-for-lovers-master\exer\dict_table.py" />
+    <Compile Include="plugin\hdf5-is-for-lovers-master\exer\peaks_of_kilimanjaro.py" />
+    <Compile Include="plugin\hdf5-is-for-lovers-master\exer\spam_filter.py" />
+    <Compile Include="plugin\hdf5-is-for-lovers-master\exer\warmup.py" />
+    <Compile Include="plugin\hdf5-is-for-lovers-master\exer\_epoch_log.py" />
+    <Compile Include="plugin\hdf5-is-for-lovers-master\sol\boatload.py" />
+    <Compile Include="plugin\hdf5-is-for-lovers-master\sol\crono.py" />
+    <Compile Include="plugin\hdf5-is-for-lovers-master\sol\dict_table.py" />
+    <Compile Include="plugin\hdf5-is-for-lovers-master\sol\peaks_of_kilimanjaro.py" />
+    <Compile Include="plugin\hdf5-is-for-lovers-master\sol\spam_filter.py" />
+    <Compile Include="plugin\hdf5-is-for-lovers-master\sol\warmup.py" />
+    <Compile Include="plugin\hdf5-is-for-lovers-master\sol\_epoch_log.py" />
+    <Compile Include="plugin\hdf5-is-for-lovers-master\tools\pagenum_filter.py" />
+    <Compile Include="plugin\hdf5-is-for-lovers-master\tools\slidebreak_filter.py" />
+    <Compile Include="plugin\hdf5storage-main\doc\source\conf.py" />
+    <Compile Include="plugin\hdf5storage-main\examples\example_hdf5storage_marshaller_plugin\example_hdf5storage_marshaller_plugin.py" />
+    <Compile Include="plugin\hdf5storage-main\examples\example_hdf5storage_marshaller_plugin\setup.py" />
+    <Compile Include="plugin\hdf5storage-main\hdf5storage\exceptions.py" />
+    <Compile Include="plugin\hdf5storage-main\hdf5storage\Marshallers.py" />
+    <Compile Include="plugin\hdf5storage-main\hdf5storage\pathesc.py" />
+    <Compile Include="plugin\hdf5storage-main\hdf5storage\plugins.py" />
+    <Compile Include="plugin\hdf5storage-main\hdf5storage\utilities.py" />
+    <Compile Include="plugin\hdf5storage-main\hdf5storage\__init__.py" />
+    <Compile Include="plugin\hdf5storage-main\setup.py" />
+    <Compile Include="plugin\hdf5storage-main\tests\asserts.py" />
+    <Compile Include="plugin\hdf5storage-main\tests\make_randoms.py" />
+    <Compile Include="plugin\hdf5storage-main\tests\test_dict_like_storage_methods.py" />
+    <Compile Include="plugin\hdf5storage-main\tests\test_empty_matrix_matlab_metadata.py" />
+    <Compile Include="plugin\hdf5storage-main\tests\test_hdf5_filters.py" />
+    <Compile Include="plugin\hdf5storage-main\tests\test_julia_mat_compatibility.py" />
+    <Compile Include="plugin\hdf5storage-main\tests\test_marshallers_requiring_modules.py" />
+    <Compile Include="plugin\hdf5storage-main\tests\test_marshaller_collection_priority.py" />
+    <Compile Include="plugin\hdf5storage-main\tests\test_marshaller_plugins.py" />
+    <Compile Include="plugin\hdf5storage-main\tests\test_matlab_compatibility.py" />
+    <Compile Include="plugin\hdf5storage-main\tests\test_multi_io.py" />
+    <Compile Include="plugin\hdf5storage-main\tests\test_ndarray_O_field.py" />
+    <Compile Include="plugin\hdf5storage-main\tests\test_path_escaping.py" />
+    <Compile Include="plugin\hdf5storage-main\tests\test_string_utf16_conversion.py" />
+    <Compile Include="plugin\hdf5storage-main\tests\test_str_conv_utils.py" />
+    <Compile Include="plugin\hdf5storage-main\tests\test_write_readback.py" />
+    <Compile Include="SearchHDF5.py" />
+    <Compile Include="widgets\custom_grips\custom_grips.py" />
+    <Compile Include="widgets\custom_grips\__init__.py" />
+    <Compile Include="widgets\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="modules\" />
+    <Folder Include="modules\__pycache__\" />
+    <Folder Include="plugin\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\exer\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\img\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\print\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\source\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\template\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\js\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\lib\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\lib\css\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\lib\font\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\lib\js\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\highlight\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\markdown\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\notes-server\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\notes\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\postmessage\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\print-pdf\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\remotes\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\zoom-js\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\sol\" />
+    <Folder Include="plugin\hdf5-is-for-lovers-master\tools\" />
+    <Folder Include="plugin\hdf5storage-main\" />
+    <Folder Include="plugin\hdf5storage-main\.github\" />
+    <Folder Include="plugin\hdf5storage-main\.github\workflows\" />
+    <Folder Include="plugin\hdf5storage-main\doc\" />
+    <Folder Include="plugin\hdf5storage-main\doc\source\" />
+    <Folder Include="plugin\hdf5storage-main\examples\" />
+    <Folder Include="plugin\hdf5storage-main\examples\example_hdf5storage_marshaller_plugin\" />
+    <Folder Include="plugin\hdf5storage-main\hdf5storage\" />
+    <Folder Include="plugin\hdf5storage-main\tests\" />
+    <Folder Include="Project\" />
+    <Folder Include="Project\PyDraculaHDF5\" />
+    <Folder Include="Project\PyDraculaHDF5\content\" />
+    <Folder Include="Project\PyDraculaHDF5\content\fonts\" />
+    <Folder Include="Project\PyDraculaHDF5\imports\" />
+    <Folder Include="Project\PyDraculaHDF5\imports\PyDraculaHDF5\" />
+    <Folder Include="Project\PyDraculaHDF5\imports\PyDraculaHDF5\designer\" />
+    <Folder Include="Project\PyDraculaHDF5\src\" />
+    <Folder Include="themes\" />
+    <Folder Include="widgets\" />
+    <Folder Include="widgets\custom_grips\" />
+    <Folder Include="widgets\custom_grips\__pycache__\" />
+    <Folder Include="widgets\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="modules\__pycache__\app_functions.cpython-36.pyc" />
+    <Content Include="modules\__pycache__\app_functions.cpython-39.pyc" />
+    <Content Include="modules\__pycache__\app_settings.cpython-36.pyc" />
+    <Content Include="modules\__pycache__\app_settings.cpython-39.pyc" />
+    <Content Include="modules\__pycache__\resources_rc.cpython-36.pyc" />
+    <Content Include="modules\__pycache__\resources_rc.cpython-39.pyc" />
+    <Content Include="modules\__pycache__\ui_functions.cpython-36.pyc" />
+    <Content Include="modules\__pycache__\ui_functions.cpython-39.pyc" />
+    <Content Include="modules\__pycache__\ui_main.cpython-36.pyc" />
+    <Content Include="modules\__pycache__\ui_main.cpython-39.pyc" />
+    <Content Include="modules\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="modules\__pycache__\__init__.cpython-39.pyc" />
+    <Content Include="plugin\hdf5-is-for-lovers-master.zip" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\.gitignore" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\classy.css" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\exer\boatload.ipynb" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\exer\crono.ipynb" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\exer\dict_table.ipynb" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\exer\names.txt" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\exer\peaks_of_kilimanjaro.ipynb" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\exer\ships.txt" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\exer\spam_filter.ipynb" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\exer\warmup.ipynb" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\hdf5-is-for-lovers.ipynb" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\hdf5-is-for-lovers.pdf" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\hdf5-is-for-lovers.rst" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\hdf5-is-for-lovers.slides.html" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\angry-mob.jpg" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\background.png" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\background.svg" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\compressed-recordsize-zlib.png" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\create-chunksize-15GB.png" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\dset_address_space.jpg" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\dset_chunked.jpg" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\dset_chunked4x4.jpg" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\dset_contiguous.jpg" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\dset_contiguous4x4.jpg" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\filesizes-chunksize-15GB.png" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\hbhk.png" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\hdf_logo.jpg" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\nerd_candy_heart.png" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\noneshallpass.jpg" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\qm.jpg" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\random-chunksize-15GB.png" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\random_peeps.png" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\seq-chunksize-15GB.png" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\starving_cpu.png" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\starving_cpu.svg" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\theblackknighttriumph.jpg" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\warmup.png" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\where_compare_10Mrow.png" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\where_compare_1Grow.png" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\xkcd_bobby_tables.jpg" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\img\ycdg.png" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\index.html" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\license.txt" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\Makefile" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\make_pres.sh" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\readme.rst" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\requirements.txt" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\.travis.yml" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\print\paper.css" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\print\pdf.css" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\reveal.css" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\reveal.min.css" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\beige.css" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\classy.css" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\default.css" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\night.css" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\README.md" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\serif.css" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\simple.css" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\sky.css" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\source\beige.scss" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\source\default.scss" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\source\night.scss" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\source\serif.scss" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\source\simple.scss" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\source\sky.scss" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\template\mixins.scss" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\template\settings.scss" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\css\theme\template\theme.scss" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\grunt.js" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\index.html" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\js\reveal.js" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\js\reveal.min.js" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\lib\css\zenburn.css" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\lib\font\league_gothic-webfont.eot" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\lib\font\league_gothic-webfont.svg" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\lib\font\league_gothic-webfont.ttf" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\lib\font\league_gothic-webfont.woff" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\lib\font\league_gothic_license" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\lib\js\classList.js" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\lib\js\head.min.js" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\lib\js\html5shiv.js" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\LICENSE" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\package.json" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\highlight\highlight.js" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\markdown\markdown.js" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\markdown\showdown.js" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\notes-server\client.js" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\notes-server\index.js" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\notes-server\notes.html" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\notes\notes.html" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\notes\notes.js" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\postmessage\example.html" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\postmessage\postmessage.js" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\print-pdf\print-pdf.js" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\remotes\remotes.js" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\plugin\zoom-js\zoom.js" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\reveal.js\README.md" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\sol\boatload.ipynb" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\sol\crono.ipynb" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\sol\dict_table.ipynb" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\sol\names.txt" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\sol\peaks_of_kilimanjaro.ipynb" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\sol\ships.txt" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\sol\spam_filter.ipynb" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\sol\warmup.ipynb" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\tools\matplotlibrc" />
+    <Content Include="plugin\hdf5-is-for-lovers-master\tools\slides.style" />
+    <Content Include="plugin\hdf5storage-main.zip" />
+    <Content Include="plugin\hdf5storage-main\.gitattributes" />
+    <Content Include="plugin\hdf5storage-main\.github\workflows\unit_tests.yml" />
+    <Content Include="plugin\hdf5storage-main\.gitignore" />
+    <Content Include="plugin\hdf5storage-main\COPYING.txt" />
+    <Content Include="plugin\hdf5storage-main\doc\make.bat" />
+    <Content Include="plugin\hdf5storage-main\doc\Makefile" />
+    <Content Include="plugin\hdf5storage-main\doc\source\api_for_plugins_developers.rst" />
+    <Content Include="plugin\hdf5storage-main\doc\source\api_for_users.rst" />
+    <Content Include="plugin\hdf5storage-main\doc\source\compression.rst" />
+    <Content Include="plugin\hdf5storage-main\doc\source\development.rst" />
+    <Content Include="plugin\hdf5storage-main\doc\source\hdf5storage.exceptions.rst" />
+    <Content Include="plugin\hdf5storage-main\doc\source\hdf5storage.Marshallers.rst" />
+    <Content Include="plugin\hdf5storage-main\doc\source\hdf5storage.pathesc.rst" />
+    <Content Include="plugin\hdf5storage-main\doc\source\hdf5storage.plugins.rst" />
+    <Content Include="plugin\hdf5storage-main\doc\source\hdf5storage.rst" />
+    <Content Include="plugin\hdf5storage-main\doc\source\hdf5storage.utilities.rst" />
+    <Content Include="plugin\hdf5storage-main\doc\source\index.rst" />
+    <Content Include="plugin\hdf5storage-main\doc\source\information.rst" />
+    <Content Include="plugin\hdf5storage-main\doc\source\introduction.rst" />
+    <Content Include="plugin\hdf5storage-main\doc\source\paths.rst" />
+    <Content Include="plugin\hdf5storage-main\doc\source\storage_format.rst" />
+    <Content Include="plugin\hdf5storage-main\doc\source\thanks.rst" />
+    <Content Include="plugin\hdf5storage-main\examples\example_hdf5storage_marshaller_plugin\COPYING.txt" />
+    <Content Include="plugin\hdf5storage-main\examples\example_hdf5storage_marshaller_plugin\pyproject.toml" />
+    <Content Include="plugin\hdf5storage-main\examples\example_hdf5storage_marshaller_plugin\README.rst" />
+    <Content Include="plugin\hdf5storage-main\examples\example_hdf5storage_marshaller_plugin\setup.cfg" />
+    <Content Include="plugin\hdf5storage-main\MANIFEST.in" />
+    <Content Include="plugin\hdf5storage-main\pyproject.toml" />
+    <Content Include="plugin\hdf5storage-main\README.rst" />
+    <Content Include="plugin\hdf5storage-main\requirements.txt" />
+    <Content Include="plugin\hdf5storage-main\requirements_doc.txt" />
+    <Content Include="plugin\hdf5storage-main\requirements_tests.txt" />
+    <Content Include="plugin\hdf5storage-main\setup.cfg" />
+    <Content Include="plugin\hdf5storage-main\tests\julia_read_mat.jl" />
+    <Content Include="plugin\hdf5storage-main\tests\make_mat_with_all_types.m" />
+    <Content Include="plugin\hdf5storage-main\tests\read_write_mat.m" />
+    <Content Include="plugin\hdf5storage-main\THANKS.rst" />
+    <Content Include="Project\PyDraculaHDF5\CMakeLists.txt" />
+    <Content Include="Project\PyDraculaHDF5\content\App.qml" />
+    <Content Include="Project\PyDraculaHDF5\content\CMakeLists.txt" />
+    <Content Include="Project\PyDraculaHDF5\content\fonts\fonts.txt" />
+    <Content Include="Project\PyDraculaHDF5\content\Screen01.ui.qml" />
+    <Content Include="Project\PyDraculaHDF5\imports\CMakeLists.txt" />
+    <Content Include="Project\PyDraculaHDF5\imports\PyDraculaHDF5\CMakeLists.txt" />
+    <Content Include="Project\PyDraculaHDF5\imports\PyDraculaHDF5\Constants.qml" />
+    <Content Include="Project\PyDraculaHDF5\imports\PyDraculaHDF5\designer\plugin.metainfo" />
+    <Content Include="Project\PyDraculaHDF5\imports\PyDraculaHDF5\DirectoryFontLoader.qml" />
+    <Content Include="Project\PyDraculaHDF5\imports\PyDraculaHDF5\EventListModel.qml" />
+    <Content Include="Project\PyDraculaHDF5\imports\PyDraculaHDF5\EventListSimulator.qml" />
+    <Content Include="Project\PyDraculaHDF5\imports\PyDraculaHDF5\qmldir" />
+    <Content Include="Project\PyDraculaHDF5\main.qml" />
+    <Content Include="Project\PyDraculaHDF5\PyDraculaHDF5.qmlproject" />
+    <Content Include="Project\PyDraculaHDF5\PyDraculaHDF5.qmlproject.qtds" />
+    <Content Include="Project\PyDraculaHDF5\qmlmodules" />
+    <Content Include="Project\PyDraculaHDF5\qtquickcontrols2.conf" />
+    <Content Include="Project\PyDraculaHDF5\src\app_environment.h" />
+    <Content Include="Project\PyDraculaHDF5\src\import_qml_plugins.h" />
+    <Content Include="Project\PyDraculaHDF5\src\main.cpp" />
+    <Content Include="themes\py_dracula_dark.qss" />
+    <Content Include="themes\py_dracula_light.qss" />
+    <Content Include="widgets\custom_grips\__pycache__\custom_grips.cpython-36.pyc" />
+    <Content Include="widgets\custom_grips\__pycache__\custom_grips.cpython-39.pyc" />
+    <Content Include="widgets\custom_grips\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="widgets\custom_grips\__pycache__\__init__.cpython-39.pyc" />
+    <Content Include="widgets\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="widgets\__pycache__\__init__.cpython-39.pyc" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
